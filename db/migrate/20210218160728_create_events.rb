@@ -4,8 +4,8 @@ class CreateEvents < ActiveRecord::Migration[6.0]
       t.string :type
       t.integer :actor_id
       t.integer :repo_id
+      t.string :created_at
 
-      t.timestamps
     end
   end
 end

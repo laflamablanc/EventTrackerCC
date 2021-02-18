@@ -4,7 +4,6 @@ class CreateActors < ActiveRecord::Migration[6.0]
       t.integer :login
       t.string :avatar_url
 
-      t.timestamps
     end
   end
 end
