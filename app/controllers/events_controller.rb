@@ -1,7 +1,8 @@
 class EventsController < ApplicationController
 
     def index
-
+        events = Event.all
+        render json: events
     end
 
     
@@ -10,8 +11,8 @@ class EventsController < ApplicationController
         render json: user_game
     end
 
-    def show
-
+    def actor
+        Event.all.filter(actor_id: params[actors][id])
     end
 
     def update

@@ -18,7 +18,7 @@ ActiveRecord::Schema.define(version: 2021_02_18_160824) do
   end
 
   create_table "events", force: :cascade do |t|
-    t.string "type"
+    t.string "event_type"
     t.integer "actor_id"
     t.integer "repo_id"
     t.string "created_at"
